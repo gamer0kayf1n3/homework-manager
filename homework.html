@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/api/new" method="post">
+        <h1>New Assignment</h1>
+            <p>Type:</p>
+            <div id="type">
+                <div>
+                    <img class="icon" src="assets/svg/book.svg" alt="">
+                    <p>Homework</p>
+                </div>
+                <div>
+                    <img class="icon" src="assets/svg/saw.svg" alt="">
+                    <p>Project</p>
+                </div>
+                <div>
+                    <img class="icon" src="assets/svg/test.svg" alt="">
+                    <p>Test</p>
+                </div>
+                <div>
+                    <img class="icon" src="assets/svg/hat.svg" alt="">
+                    <p>Activity</p>
+                </div>
+                <div>
+                    <img class="icon" src="assets/svg/flag.svg" alt="">
+                    <p>Alert</p>
+                </div>
+                <div>
+                    <img class="icon" src="assets/svg/more.svg" alt="">
+                    <p>More</p>
+                </div>
+            </div>
+        <p>Title</p>
+        <input type="text" name="" id="">   
+        <p>Description</p>
+        <textarea name="" id="" style="width: 100%; height: 100px;"></textarea>         
+    </form>
+    <style>
+        * {
+            color: white;
+            font-family: "Segoe UI";
+        }
+        #type {
+            display: grid;
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            border-radius: 5px;
+
+        }
+        #type div {
+            background-color: rgb(80, 80, 255);
+            border-radius: 5px;
+            margin: 5px;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border:2px solid rgb(81, 0, 255);
+            text-align: center;
+            
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+        #type div * {
+            padding:0;
+            margin:0;
+        }
+    </style>
+</body>
+</html>
